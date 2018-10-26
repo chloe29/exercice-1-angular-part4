@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <button type="button" name="plus" ng-click="count = count + 1" ng-init="count = 0">+</button>
+    <!-- ng-init sert à mettre un 0 dans l'input au chargement de la page (initialisation à 0) -->
+    <!-- ng-click (indique à Angular ce qu'il se passe lorqu'on clique) : la valeur augmente de 1 (incrémentation) -->
+  <button type="button" name="moins" ng-click="count = count - 1" ng-init="count = 0">-</button>
+    <!-- lorsque l'on clique sur le bouton, la valeur diminue de 1 (décrémentation) -->
+  <p>Le chiffre est : {{count}}</p>
+</body>
+</html>
